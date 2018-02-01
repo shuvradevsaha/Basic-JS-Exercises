@@ -11,13 +11,13 @@ Output:
  --------------------------- */
 
 function percentage(number, percentage) {
-  return "No code yet";
+  return number*(percentage/100);
 }
 console.log("Percentage Calculator:");
 /* Uncomment the following to check */
-  // console.log(percentage(2000, 37.12));
-  // console.log(percentage(450, 56.5));
-  // console.log(percentage(5230, 34));
+   console.log(percentage(2000, 37.12));
+   console.log(percentage(450, 56.5));
+   console.log(percentage(5230, 34));
 
 
 /* ---------------------------
