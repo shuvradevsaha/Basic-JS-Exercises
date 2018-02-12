@@ -174,26 +174,25 @@ c occurs 5 times
  --------------------------- */
 
 function most_frequent(arr) {
-	var arr=[3, 'c', 'c', 'c', 2, 3, 'c', 3, 'c', 2, 4, 9, 3];
-var most_frequent = 1;
-var most = 0;
-var item;
-for (var i=0; i<arr.length; i++)
-{
-        for (var j=i; j<arr.length; j++)
-        {
-                if (arr[i] == arr[j])
-                 most++;
-                if (most_frequent<most)
-                 {
-                  most_frequent=most; 
-                  item = arr[i];
-                }
-        }
-        most=0;
-}
-console.log(item+" ( " +most_frequent +" times ) ") ;
-  console.log("Most frequently occuring item in arr");
+    var most_f = 1;
+    var c= 0;
+    var item;
+    for (var i=0; i<arr.length; i++)
+    {
+            for (var j=i; j<arr.length; j++)
+            {
+                    if (arr[i] == arr[j])
+                     c++;
+                    if (most_f<c)
+                    {
+                      most_f=c; 
+                      item = arr[i];
+                    }
+            }
+            c=0;
+    }    
+  console.log(item+" occurs "+most_f+" times" );
+    
 }
 
 console.log("Most Frequent Item:");
